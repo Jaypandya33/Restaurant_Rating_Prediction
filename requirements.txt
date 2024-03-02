@@ -1,0 +1,10 @@
+pandas
+scikit-learn
+numpy
+seaborn
+ipykernel
+Flask
+dvc
+mlflow==2.2.2  #This is more stable version
+
+-e .

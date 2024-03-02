@@ -60,7 +60,7 @@ class CustomData:
                     'location':[self.location], 
                     'rest_type':[self.rest_type], 
                     'cuisines':[self.cuisines],
-                    'cost_for_2':[self.cost_for_two_people],
+                    'cost_for_two_people':[self.cost_for_two_people],
                     'type':[self.type]
                 }
                 df = pd.DataFrame(custom_data_input_dict)

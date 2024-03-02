@@ -79,3 +79,35 @@ def load_object(file_path):
     except Exception as e:
         logging.info('Exception Occured in load_object function utils')
         raise customexception(e,sys)
+    
+import numpy as np
+
+
+def handle_categorical_columns(data, column_thresholds):
+    try:
+        for column_name, threshold in column_thresholds.items():
+            column_count = data[column_name].value_counts()
+            categories_below_threshold = column_count[column_count < threshold].index
+            data[column_name] = np.where(data[column_name].isin(categories_below_threshold), 'others', data[column_name])
+            print(f"Updated column '{column_name}' with threshold {threshold}")
+
+        #return data
+        
+    except Exception as e:
+        logging.error(f"Error in handling categorical columns: {e}")
+        raise customexception(e, sys)
+
+
+def handle_rate_column(df, column_name="rate"):
+    try:
+        df[column_name] = df[column_name].apply(lambda value: np.nan if value in ["NEW", "-"] else float(str(value).split("/")[0]))
+        
+        # Replacing null values with the mean
+        df[column_name].fillna(df[column_name].mean(), inplace=True)
+
+        #return df
+        
+    except Exception as e:
+        logging.error(f"Error in handling {column_name} column: {e}")
+        raise customexception(e, sys)
+

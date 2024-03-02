@@ -1,4 +1,4 @@
-online_order,book_table,rate,votes,location,rest_type,cuisines,approx_cost(for two people),listed_in(type)
+online_order,book_table,rate,votes,location,rest_type,cuisines,cost_for_two_people,type
 Yes,Yes,4.1,775,Banashankari,Casual Dining,others,800.0,Buffet
 Yes,No,4.1,787,Banashankari,Casual Dining,others,800.0,Buffet
 Yes,No,3.8,918,Banashankari,others,others,800.0,Buffet

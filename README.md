@@ -1,12 +1,14 @@
 # Restaurant Rating Prediction Project
 
 # Overview
-## The Restaurant Rating Prediction Project is a machine learning-based application that predicts the ratings of restaurants based on various features. Leveraging data analysis and predictive modeling, this project aims to provide insights into the factors influencing restaurant ratings, ultimately assisting users in making informed decisions about where to dine.
+'''The Restaurant Rating Prediction Project is a machine learning-based application that predicts the ratings of restaurants based on various features. Leveraging data analysis and predictive modeling, this project aims to provide insights into the factors influencing restaurant ratings, ultimately assisting users in making informed decisions about where to dine.
+'''
 
 # Key Features
-# Data Exploration: Gain insights into the dataset through exploratory data analysis (EDA) to understand the distribution of features, correlations, and potential trends.
-# Predictive Modeling: Utilize machine learning algorithms to build a predictive model capable of estimating restaurant ratings based on input features.
-# User-Friendly Interface: Interact with the model through an intuitive user interface that allows users to input restaurant features and receive a predicted rating.
+
+#Data Exploration:Gain insights into the dataset through exploratory data analysis (EDA) to understand the distribution of features, correlations, and potential trends.
+#Predictive Modeling: Utilize machine learning algorithms to build a predictive model capable of estimating restaurant ratings based on input features.
+#User-Friendly Interface: Interact with the model through an intuitive user interface that allows users to input restaurant features and receive a predicted rating.
 
 ## Workflows
 

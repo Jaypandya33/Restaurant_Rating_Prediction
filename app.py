@@ -14,7 +14,7 @@ def home_page():
 @app.route("/predict",methods=["GET","POST"])
 def predict_datapoint():
     if request.method == "GET":
-        return render_template("form.html")
+        return render_template("index.html")
     
     else:
         data=CustomData(
@@ -35,9 +35,9 @@ def predict_datapoint():
         
         pred=predict_pipeline.predict(final_data)
         
-        result=round(pred[0],2)
+        pred=round(pred[0],2)
         
-        return render_template("result.html",final_result=result)
+        return render_template("result.html",prediction = str(pred))
 
 #execution begin
 if __name__ == '__main__':

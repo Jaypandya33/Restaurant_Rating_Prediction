@@ -7,7 +7,9 @@
 # Key Features
 
 #Data Exploration:Gain insights into the dataset through exploratory data analysis (EDA) to understand the distribution of features, correlations, and potential trends.
+
 #Predictive Modeling: Utilize machine learning algorithms to build a predictive model capable of estimating restaurant ratings based on input features.
+
 #User-Friendly Interface: Interact with the model through an intuitive user interface that allows users to input restaurant features and receive a predicted rating.
 
 ## Workflows
